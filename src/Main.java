@@ -1,4 +1,5 @@
 import Programmers.level3.Diskcontroller;
+import Programmers.level3.Network;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +31,9 @@ public class Main {
         int target = 0;
         System.out.println(Targetnumber.solution(numbers, target));*/
 
-
+        //Network
+        /*int n =3;
+        int[][] computers = {{1,1,0},{1,1,0},{0,0,1}};
+        System.out.println(Network.solution(n,computers));*/
     }
 }
