@@ -17,9 +17,13 @@ public class Main {
         //int[][] jobs = {{0,20},{3,4},{3,5},{17,2}};
         //int[][] jobs = {{0,9},{0,4},{0,5},{0,7},{0,3}};
         //int[][] jobs = {{10,10},{30,10},{50,2},{51,2}};
-        int[][] jobs = {{0,0},{1,5},{2,20},{51,2}};
-        System.out.println(Diskcontroller.solution(jobs));
+        //int[][] jobs = {{0,0},{1,5},{2,20},{51,2}};
+        //System.out.println(Diskcontroller.solution(jobs));
 
+        //Nofinishplayer
+        /*String[] participant ={"leo", "kiki", "eden"};
+        String[] completion ={"eden", "kiki"};
+        System.out.println(Nofinishplayer.solution(participant,completion));*/
 
 
     }
