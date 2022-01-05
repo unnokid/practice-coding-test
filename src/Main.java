@@ -25,6 +25,11 @@ public class Main {
         String[] completion ={"eden", "kiki"};
         System.out.println(Nofinishplayer.solution(participant,completion));*/
 
+        //Targetnumber
+        /*int[] numbers = {2, 2, 3, 1, 1};
+        int target = 0;
+        System.out.println(Targetnumber.solution(numbers, target));*/
+
 
     }
 }
