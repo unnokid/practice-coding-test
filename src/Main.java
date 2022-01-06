@@ -1,3 +1,4 @@
+import Programmers.level1.Plusnotexistnumber;
 import Programmers.level3.Diskcontroller;
 import Programmers.level3.Network;
 
@@ -36,6 +37,7 @@ public class Main {
         int[][] computers = {{1,1,0},{1,1,0},{0,0,1}};
         System.out.println(Network.solution(n,computers));*/
 
+        //Transformword
         /* String begin = "hit";
         String target = "cog";
         String[] words = {"cog", "hot", "dot", "dog", "lot", "log"};
@@ -46,6 +48,12 @@ public class Main {
         String s1 = "cdcd";
         System.out.println(Coupleremove.solution(s));
         System.out.println(Coupleremove.solution(s1));*/
+
+        //Plusnotexistnumber
+        /*int[] numbers1 = {1,2,3,4,5,6,7,8,0};
+        int[] numbers2 = {5,8,4,0,6,7,9};
+        System.out.println(Plusnotexistnumber.solution(numbers1));
+        System.out.println(Plusnotexistnumber.solution(numbers2));*/
 
     }
 }
