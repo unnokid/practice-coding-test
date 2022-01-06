@@ -41,5 +41,11 @@ public class Main {
         String[] words = {"cog", "hot", "dot", "dog", "lot", "log"};
         System.out.println(Transformword.solution(begin,target,words));*/
 
+        //Coupleremove
+        /*String s = "baabaa";
+        String s1 = "cdcd";
+        System.out.println(Coupleremove.solution(s));
+        System.out.println(Coupleremove.solution(s1));*/
+
     }
 }
