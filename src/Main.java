@@ -35,5 +35,11 @@ public class Main {
         /*int n =3;
         int[][] computers = {{1,1,0},{1,1,0},{0,0,1}};
         System.out.println(Network.solution(n,computers));*/
+
+        /* String begin = "hit";
+        String target = "cog";
+        String[] words = {"cog", "hot", "dot", "dog", "lot", "log"};
+        System.out.println(Transformword.solution(begin,target,words));*/
+
     }
 }
