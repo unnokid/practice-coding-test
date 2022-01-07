@@ -4,7 +4,17 @@ public class SearchInsertPosition {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-
+        int[] nums;
+        int target;
+        nums = new int[] {1,3,5,6};
+        target = 5;
+        System.out.println(solution.searchInsert(nums,target));
+        nums = new int[] {1,3,5,6};
+        target = 2;
+        System.out.println(solution.searchInsert(nums,target));
+        nums = new int[] {1,3,5,6};
+        target = 7;
+        System.out.println(solution.searchInsert(nums,target));
     }
 
     static class Solution {
@@ -42,12 +52,9 @@ public class SearchInsertPosition {
             }
 
             //못찾아서 나왔음
-            if(start > end){
-                return  end+1;
-            }
+            return  end+1;
 
             //아니면 존재하면 안됨
-            return -1;
 
         }
     }
