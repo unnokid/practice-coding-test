@@ -11,9 +11,6 @@ public class Fatigue {
     }
 }
 
-
-
-
 class Solution {
     static boolean[] visited;
     static int max =0;
