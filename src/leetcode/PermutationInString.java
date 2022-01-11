@@ -30,8 +30,8 @@ public class PermutationInString {
                 for (int j = i; j < i+length; j++) {
                     b[s2.charAt(j)-97]++;
                 }
-                System.out.println("a는 "+Arrays.toString(a));
-                System.out.println("b는 "+Arrays.toString(b));
+                //System.out.println("a는 "+Arrays.toString(a));
+                //System.out.println("b는 "+Arrays.toString(b));
                 if(Arrays.equals(a, b)){
                     return true;
                 }
