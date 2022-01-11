@@ -6,11 +6,12 @@ public class Balloon {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] a;
-        a = new int[]{9,-1,-5};
+        a = new int[]{9, -1, -5};
         System.out.println(solution.solution(a));
-        a = new int[]{-16,27,65,-2,58,-92,-71,-68,-61,-33};
+        a = new int[]{-16, 27, 65, -2, 58, -92, -71, -68, -61, -33};
         System.out.println(solution.solution(a));
     }
+
     static class Solution {
         public int solution(int[] a) {
             int answer = 0;
@@ -35,7 +36,7 @@ public class Balloon {
             //양쪽끝애들은 어떻게든 남길수 있는듯
 
             //1개만 오면 1개끝
-            if(a.length == 1){
+            if (a.length == 1) {
                 return 1;
             }
             //양쪽은 다 남을수 있음
@@ -43,15 +44,15 @@ public class Balloon {
             HashSet<Integer> set = new HashSet<>();
             int min = a[0];
             //왼쪽부터 합체
-            for (int i = 1; i <a.length ; i++) {
+            for (int i = 1; i < a.length; i++) {
                 set.add(min);
-                min = Math.min(a[i],min);
+                min = Math.min(a[i], min);
             }
-            min = a[a.length-1];
+            min = a[a.length - 1];
             //오른쪽 부터 합체
-            for (int i = a.length-2; i >=0 ; i--) {
+            for (int i = a.length - 2; i >= 0; i--) {
                 set.add(min);
-                min = Math.min(a[i],min);
+                min = Math.min(a[i], min);
             }
             answer = set.size();
             return answer;
