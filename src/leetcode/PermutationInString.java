@@ -20,13 +20,13 @@ public class PermutationInString {
     static class Solution {
         public boolean checkInclusion(String s1, String s2) {
 
-            int a[] = new int[26];
+            int[] a = new int[26];
             for (int i = 0; i <s1.length() ; i++) {
                 a[s1.charAt(i)-97]++;
             }
             int length = s1.length();
             for (int i = 0; i <= s2.length() -s1.length() ; i++) {
-                int b[] = new int[26];
+                int[] b = new int[26];
                 for (int j = i; j < i+length; j++) {
                     b[s2.charAt(j)-97]++;
                 }
@@ -39,4 +39,5 @@ public class PermutationInString {
             return false;
         }
     }
+
 }
