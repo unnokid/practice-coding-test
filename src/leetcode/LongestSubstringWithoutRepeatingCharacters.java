@@ -28,7 +28,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
                     //System.out.println(s.charAt(start)+"제거");
                     set.remove(s.charAt(start));
                     start++;
-                    i--;
+                    i--;//앞에 땡긴것과 겹친건지 다시 확인해야됨
                 }
                 //첫 문자면
                 else{
