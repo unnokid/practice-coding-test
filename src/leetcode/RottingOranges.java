@@ -48,7 +48,7 @@ public class RottingOranges {
                                 if(newY<0 || grid[0].length <= newY){
                                     newY = j;
                                 }
-                                //4방향움직인 인덱스중 신선한것이 있다면 썪은뒤 전체에서 1개빼기
+                                //4방향움직인 인덱스중 신선한것이 있다면 썩고 전체에서 1개빼기
                                 if(map[newX][newY] == 1){
                                     map[newX][newY] = 2;
                                     result--;
