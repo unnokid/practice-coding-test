@@ -4,7 +4,15 @@ import java.util.Arrays;
 
 public class MakeMin {
     public static void main(String[] args) {
-
+        Solution solution = new Solution();
+        int[] A;
+        int[] B;
+        A = new int[]{1,4,2};
+        B = new int[]{5,4,4};
+        System.out.println(solution.solution(A,B));
+        A = new int[]{1,2};
+        B = new int[]{3,4};
+        System.out.println(solution.solution(A,B));
     }
     static class Solution
     {
