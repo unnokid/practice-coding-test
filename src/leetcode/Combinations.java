@@ -20,7 +20,6 @@ public class Combinations {
 
             backtrack(result,1, new ArrayList<Integer>(),n,k);
 
-
             return result;
         }
         public void backtrack(List<List<Integer>> result,int target,List<Integer> temp, int n, int k){
@@ -41,28 +40,6 @@ public class Combinations {
                 System.out.println(temp+"temp제거후");
             }
         }
-
-        /*public void check(int n, int k, int count,List<Integer> temp, boolean[] visit){
-            if(temp.size() == k){
-                List<Integer> list = new ArrayList<>(temp);
-                Collections.sort(list);
-                if(!result.contains(list)){
-                    result.add(list);
-                }
-                return;
-            }
-            for (int i = 1; i <= n; i++) {
-                //중복처리
-                if(!visit[i]){
-                    temp.add(i);
-                    visit[i]= true;
-                    check(n,k,count+1,temp,visit);
-                    temp.remove(count);
-                    visit[i] = false;
-                }
-            }
-
-        }*/
     }
 
 }
