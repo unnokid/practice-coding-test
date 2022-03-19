@@ -42,7 +42,6 @@ public class MaximumFrequencyStack {
                 stacks.add(new Stack<>());
             }
             stacks.get(--count).push(val);
-            System.out.println(stacks);
         }
 
         public int pop() {
