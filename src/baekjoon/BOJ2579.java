@@ -18,6 +18,15 @@ public class BOJ2579 {
       arr[i] = Integer.parseInt(br.readLine());
     }
 
+    if(N < 3){
+      int sum =0;
+      for (int i = 0; i <arr.length ; i++) {
+        sum+=arr[i];
+      }
+      System.out.println(sum);
+      return;
+    }
+
     dp[1] = arr[1];
     dp[2] = arr[2]+ arr[1];
     dp[3] = Math.max(arr[1]+arr[3], arr[2]+arr[3]);
