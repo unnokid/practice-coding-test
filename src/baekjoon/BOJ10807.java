@@ -13,13 +13,19 @@ public class BOJ10807 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
+        int[] arr = new int[N];
         String[] s = br.readLine().split(" ");
-        Map<Integer,Integer> map = new HashMap<>();
         for (int i = 0; i < N; i++) {
             int target = Integer.parseInt(s[i]);
-            map.put(target,map.getOrDefault(target,0)+1);
+            arr[i] =target;
         }
         int V = Integer.parseInt(br.readLine());
-        System.out.println(map.get(V));
+        int count =0;
+        for (int i = 0; i < N; i++) {
+            if(V == arr[i]){
+                count++;
+            }
+        }
+        System.out.println(count);
     }
 }
