@@ -22,9 +22,9 @@ public class BOJ1247 {
                 S =S.add(S2);
             }
 
-            if(S.compareTo(BigInteger.ZERO) == -1){
+            if(S.compareTo(BigInteger.ZERO) < 0){
                 System.out.println("-");
-            }else if(S.compareTo(BigInteger.ZERO) == 1){
+            }else if(S.compareTo(BigInteger.ZERO) > 0){
                 System.out.println("+");
             }else{
                 System.out.println(0);
