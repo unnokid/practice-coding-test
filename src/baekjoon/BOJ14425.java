@@ -1,7 +1,9 @@
+package baekjoon;
+
 import java.io.*;
 import java.util.*;
 
-public class Main{
+public class BOJ14425{
     public static void main(String[] args) throws IOException{
         //백준 14425 문자열 집합
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
