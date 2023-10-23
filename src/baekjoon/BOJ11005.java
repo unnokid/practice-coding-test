@@ -26,9 +26,10 @@ public class BOJ11005 {
             }
             N/=B;
         }
-
+        StringBuilder sb= new StringBuilder();
         for (int i = list.size()-1; i >=0 ; i--) {
-            System.out.println(list.get(i));
+            sb.append(list.get(i));
         }
+        System.out.println(sb);
     }
 }
