@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class BOJ2238{
+    public static void main(String[] args) throws IOException{
+        //백준 2238 경매
+        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String[] split = br.readLine().split(" ");
+        
+        Map<Integer,List<String>> map = new HashMap<>();
+        int U = Integer.parseInt(split[0]);
+        int N = Integer.parseInt(split[1]);
+        
+        //hashMap 가격 기준 이름 리스트 넣기
+        for(int i =0; i<N; i++){
+            String[] s = br.readLine().split(" ");
+            int price = Integer.parseInt(s[1]);
+            String name = s[0];
+            
+            if(map.containsKey(price)){
+                map.get(price).add(name);
+            }else{
+                List<String> list = new ArrayList<>();
+                list.add(name);
+                map.put(price,list);
+            }
+        }
+        
+        String result = "";
+        int limit = 100001;
+        int len = 100001;
+        
+        for(int price : map.keySet()){
+            List<String> people = map.get(price);
+            if(people.size() < len){
+                limit = price;
+                len = people.size();
+                result = people.get(0);
+            }
+              
+        }
+        System.out.println(result+" "+limit);
+    }
+}
