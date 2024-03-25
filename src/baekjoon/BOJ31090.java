@@ -1,8 +1,10 @@
+package baekjoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class BOJ31090 {
     public static void main(String[] args) throws IOException {
         //백준 31090 2023은 무엇이 특별할까?
 
