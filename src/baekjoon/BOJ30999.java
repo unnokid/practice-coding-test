@@ -1,8 +1,10 @@
+package baekjoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+public class BOJ30999 {
     public static void main(String[] args) throws IOException {
         //백준 30999 민주주의
         
