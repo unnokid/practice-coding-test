@@ -22,7 +22,6 @@ public class BOJ23348 {
             for (int j = 0; j < 3; j++) {
                 String[] member = br.readLine().split(" ");
                 for (int k = 0; k < 3; k++) {
-                    System.out.println();
                     int next = Integer.parseInt(member[k]);
                     total+= (next * score[k]);
                 }
