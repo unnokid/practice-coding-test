@@ -10,25 +10,24 @@ public class BOJ6378 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         while(true){
-            String s = br.readLine();
-            if(s.equals("0")){
+            String S = br.readLine();
+            if(S.equals("0")){
                 break;
             }
-            int sum =0;
-            while(s.length() >1){
+            while(true) {
+                int sum = 0;
 
-                for (int i = 0; i <s.length() ; i++) {
-                    int next = Integer.parseInt(s.substring(i,i+1));
-                    sum +=next;
+                if(S.length() < 2) {
+                    break;
+                }else {
+                    for(int i = 0; i < S.length(); i++) {
+                        sum += S.charAt(i) - '0';
+                    }
                 }
-
-                s = String.valueOf(sum);
-                if(sum >= 10){
-                    sum =0;
-                }
+                S = String.valueOf(sum);
             }
-            sb.append(sum).append("\n");
+            System.out.println(S);
         }
-        System.out.println(sb);
+
     }
 }
